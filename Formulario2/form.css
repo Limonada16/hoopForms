@@ -1,0 +1,112 @@
+*{
+margin:0;
+box-sizing:border-box;
+padding:0;
+font-family: sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn__persona, .btn__empresa{
+    width: 110px;
+    background-color: white;
+    color: #9C1A77;
+    padding: 5px 10px;
+    border: 1px solid #9C1A77;
+    border-radius: 6px;
+}
+.div__btn{
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+}
+.section__formulario{
+    width: 400px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    box-shadow: 0px 0px 50px -5px rgba(0,0,0,0.77)
+}
+.formulario{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.tele__pais{
+    display: flex;
+}
+.tele{
+    margin-left: 50px;
+    text-align: center;
+}
+.tele::placeholder{
+    text-align: center;
+}
+input{
+    width: 100%;
+    padding: 7px;
+    color: #9C1A77;
+    border: 1px solid #9C1A77;
+    border-radius: 4px;
+    padding-left: 15px;
+}
+textarea{
+    border: 1px solid #9C1A77;
+    padding: 2px 7px;
+}
+.select__paises{
+    border: 1px solid #9C1A77;
+    color: #9C1A77;
+    width: 100px;
+    padding-left: 5px;
+    border-radius: 4px;
+}
+input::placeholder, textarea::placeholder{
+    color: #9C1A77;
+}
+textarea::placeholder{
+    font-size: 15px;
+}
+p{
+    color: #1C3855;
+}
+.btn__enviarSoli{
+    width: 100%;
+    padding: 7px;
+    background-color: #1C3855;
+    color: white;
+    border: 1px solid #1C3855;
+    border-radius: 9px;
+    padding-left: 15px;
+}
+.btn__subirFile{
+    width: auto;
+    background-color: white;
+    color: #9C1A77;
+    margin-left: 150px;
+    padding: 10px 10px;
+    font-size: 12px;
+    border: 1px solid #9C1A77;
+    border-radius: 6px;
+}
+.btn__subirFile:hover, .btn__persona:hover, .btn__empresa:hover, .btn__enviarSoli:hover{
+    cursor: pointer;
+    color: white;
+    background-color: #9C1A77;
+}
+.aliado__parrafo{
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: -15px;
+}
+.opc__small{
+    text-align: end;
+    margin-top: -18px;
+    font-size: 10px;
+}

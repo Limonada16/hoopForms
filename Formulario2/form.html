@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Formulario2/form.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="section__formulario">
+        <div class="div__btn">
+            <button class="btn__persona">PERSONA</button>
+            <button class="btn__empresa">EMPRESA</button>
+        </div>
+        <form class="formulario" method="POST" action="https://submit-form.com/boXdAcJx">
+            <input type="text" name="razon" placeholder="Razón social o R.U.C">
+            <input type="email" name="email" placeholder="E-mail">
+            <div class="tele__pais">
+                <select name="paises" id="paises" class="select__paises">
+                    <option type="text" name="pais">PAÍS</option>
+                </select>
+                <input type="number" name="tele" placeholder="TELÉFONO" class="tele">
+            </div>
+            <p class="aliado__parrafo">¿Por qué quieres ser un aliado HOOP?</p>
+            <textarea name="area__texto" placeholder="Escribe aquí" id="" cols="30" rows="10"></textarea>
+
+            <input type="file" name="subirarchi" placeholder="ADJUNTAR ARCHIVO" accept="image/*,.pdf" class="btn__file" id="btn__file" hidden="hidden">
+            <button class="btn__subirFile" name="subirmasarchi" id="btn__subirFile" type="button">ADJUNTAR ARCHIVO</button>
+
+
+            <small class="opc__small">*OPCIONAL</small>
+            <button class="btn__enviarSoli" name="sendForm" type="submit">ENVIAR SOLICITUD</button>
+        </form>
+    </section>
+    <script>
+        const btn__file = document.getElementById("btn__file");
+        const btn__subirFile = document.getElementById("btn__subirFile");
+        var list = [
+            {
+                "pais":"Argentina",
+            },
+            {
+                "pais":"Bolivia",
+            },
+            {
+                "pais":"Brasil",
+            },
+            {
+                "pais":"Chile",
+            },
+            {
+                "pais":"Costa Rica",
+            },
+            {
+                "pais":"Cuba",
+            },
+            {
+                "pais":"Ecuador",
+            },
+            {
+                "pais":"El Salvador",
+            },
+            {
+                "pais":"Guayana Francesa",
+            },
+            {
+                "pais":"Granada",
+            },
+            {
+                "pais":"Guatemala",
+            },
+            {
+                "pais":"Guayana",
+            },
+            {
+                "pais":"Haití",
+            },
+            {
+                "pais":"Honduras",
+            },
+            {
+                "pais":"Jamaica",
+            },
+            {
+                "pais":"México",
+            },
+            {
+                "pais":"Nicaragua",
+            },
+            {
+                "pais":"Paraguay",
+            },
+            {
+                "pais":"Panamá",
+            },
+            {
+                "pais":"Perú",
+            },
+            {
+                "pais":"Puerto Rico",
+            },
+            {
+                "pais":"República Dominicana",
+            },
+            {
+                "pais":"Surinam",
+            },
+            {
+                "pais":"Uruguay",
+            },
+            {
+                "pais":"Venezuela",
+            },
+        ];
+        btn__subirFile.addEventListener("click", function(){
+            btn__file.click();
+        });
+        const llenarPais = () =>{
+            const selectPais = document.querySelector("#paises");
+            list.forEach((objPeli)=>{
+                const select = document.createElement("option");
+                select.innerText = objPeli.pais;
+                selectPais.append(select);
+            })
+        };
+        llenarPais();
+    </script>
+</body>
+
+</html>
