@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Formulario3/form.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" class="formulario">
+        <label for="">NOMBRE<small>*</small></label>
+        <input type="text" class="input__nombre" placeholder="NOMBRE Y APELLIDO">
+        <label for="">FECHA DE NACIMIENTO<small>*</small></label>
+        <input type="date" class="input__naci">
+        <label for="">E-MAIL<small>*</small></label>
+        <input type="email" class="input__email" placeholder="ESCRIBE TU EMAIL">
+        <div class="div__tele">
+            <select name="pais" id="pais" class="select__pais">PAÍS</select>
+            <input type="number" class="tele" placeholder="TELÉFONO">
+        </div>
+        <label for="">PROGRAMA DESEADO<small>*</small></label>
+        <select name="programa" class="input__programa" id="programa">ELIGE EL PROGRAMA</select>
+        <div class="div__check">
+            <input type="checkbox"><label class="label__check" for="">Declaro que la información que 
+                ha sido ingresada en este formulario es completamente verídica.
+            </label>
+        </div>
+        
+        <p>Los campos marcados con un * son obligatorios</p>
+        <button class="btn__send">SEND</button>
+    </form>
+    <script>
+        var list = [
+            {
+                "pais":"Argentina",
+            },
+            {
+                "pais":"Bolivia",
+            },
+            {
+                "pais":"Brasil",
+            },
+            {
+                "pais":"Chile",
+            },
+            {
+                "pais":"Costa Rica",
+            },
+            {
+                "pais":"Cuba",
+            },
+            {
+                "pais":"Ecuador",
+            },
+            {
+                "pais":"El Salvador",
+            },
+            {
+                "pais":"Guayana Francesa",
+            },
+            {
+                "pais":"Granada",
+            },
+            {
+                "pais":"Guatemala",
+            },
+            {
+                "pais":"Guayana",
+            },
+            {
+                "pais":"Haití",
+            },
+            {
+                "pais":"Honduras",
+            },
+            {
+                "pais":"Jamaica",
+            },
+            {
+                "pais":"México",
+            },
+            {
+                "pais":"Nicaragua",
+            },
+            {
+                "pais":"Paraguay",
+            },
+            {
+                "pais":"Panamá",
+            },
+            {
+                "pais":"Perú",
+            },
+            {
+                "pais":"Puerto Rico",
+            },
+            {
+                "pais":"República Dominicana",
+            },
+            {
+                "pais":"Surinam",
+            },
+            {
+                "pais":"Uruguay",
+            },
+            {
+                "pais":"Venezuela",
+            },
+        ];
+        const llenarPais = () =>{
+            const selectPais = document.querySelector("#pais");
+            list.forEach((objPeli)=>{
+                const select = document.createElement("option");
+                select.innerText = objPeli.pais;
+                selectPais.append(select);
+            })
+        };
+        llenarPais()
+    </script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+*{
+margin:0;
+box-sizing:border-box;
+padding:0;
+font-family: sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: 600px;
+    padding: 40px;
+    justify-content: space-between;
+    box-shadow: 0px 0px 5px 2px #ccc;
+    gap: 10px;
+}
+.input__nombre, .input__naci, .input__email, .input__programa{
+    margin-top: -10px;
+}
+.tele{
+    margin-left: 20px;
+}
+.select__pais{
+    width: auto;
+    height: auto;
+    padding-left: 2px;
+}
+input, select{
+    padding: 6px;
+    border: 1px solid ;
+    border-radius: 4px;
+}
+.div__check{
+    display: flex;
+    gap: 10px;
+}
+.div__tele{
+    display: flex;
+}
+label{
+    color: #27425c;
+    font-weight: bold;
+}
+small{
+    color: #881a73;
+    font-weight: bold;
+}
+.label__check{
+    font-size: 12px;
+    color: #881a73;
+}
+.btn__send{
+    padding: 6px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: #881a73;
+    color: white;
+    width: 26%;
+   
+}
+@media(max-width:569px){
+    .div__tele{
+        height: 1%;
+        gap: 20px;
+        /* width: 100%; */
+        /* gap: 50px; */
+        /* justify-content: space-between; */
+        flex-wrap: wrap;
+    }
+    .codi__pos{
+        margin-left: 0px;
+    }
+}
